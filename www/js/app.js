@@ -42,6 +42,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.result', {
+    url: '/result',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/result.html',
+        controller: 'ResultCtrl'
+      }
+    }
+  })
+
   .state('app.grade', {
     url: '/grade',
     views: {

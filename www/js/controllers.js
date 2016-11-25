@@ -4,11 +4,37 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('CalcCtrl', function($scope) {
+.factory('Data', function() {
+    var total = {};
+    return {
+        getTotal: function() {
+            return total;
+        },
+        setTotal: function(totalparameter) {
+            total = totalparameter;
+        }
+    };
+})
+
+
+.controller('CalcCtrl', function($scope, $state, Data) {
   $scope.doCalc = function() {
     var a = $scope.num1;
     var b = $scope.num2;
-    $scope.result = a+b;
-    console.log(a+b);
+    var c = a + b;
+
+    Data.setTotal(c);
+
+    if (c < 50)
+      $scope.test = "hello";
+    else
+      $scope.test = "bye";
+
+    $scope.result = c;
+    //$state.go('templates/result');
   };
+})
+
+.controller('ResultCtrl', function($scope, $state, Data){
+  $scope.total = Data.getTotal();
 });
