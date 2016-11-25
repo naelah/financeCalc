@@ -1,0 +1,24 @@
+<ion-view view-title="Calculate">
+  <ion-content>
+    <h1>Calculate</h1>
+    <form ng-submit="doCalc()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Input 1</span>
+          <input type="number" ng-model="$parent.num1">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Input 2</span>
+          <input type="number" ng-model="$parent.num2">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Calculate</button>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Result</span>
+          	{{ result }}
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
