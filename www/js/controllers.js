@@ -18,6 +18,10 @@ angular.module('starter.controllers', [])
 
 
 .controller('CalcCtrl', function($scope, $state, Data) {
+  $scope.resetForm = function() {
+    
+  };
+
   $scope.doCalc = function() {
 
     var liq = $scope.num1;
@@ -36,7 +40,6 @@ angular.module('starter.controllers', [])
 
     $state.go('app.result');
   };
-
 
 })
 
