@@ -81,7 +81,7 @@ angular.module('starter.controllers', [])
         {
         alert("GDP to be a number")
         return;
-    }
+        }
     else if(/\D/.test(inf))
         {
         alert("inflation has to be a number")
