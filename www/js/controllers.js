@@ -38,10 +38,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ResultCtrl', function($scope, $state, Data){
-  var c = Data.getTotal();
-  $scope.total = c;
+  var sum = Data.getTotal();
+  $scope.total = sum;
 
-  if (c < 50)
+  if (sum < 50)
       $scope.status = "fail";
     else
       $scope.status = "pass";
