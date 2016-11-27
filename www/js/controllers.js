@@ -19,7 +19,15 @@ angular.module('starter.controllers', [])
 
 .controller('CalcCtrl', function($scope, $state, Data) {
   $scope.resetForm = function() {
-    
+    $scope.num1 = "";
+    $scope.num2 = "";
+    $scope.num3 = "";
+    $scope.num4 = "";
+    $scope.num5 = "";
+    $scope.num6 = "";
+    $scope.num7 = "";
+    $scope.num8 = "";
+    $scope.num9 = "";
   };
 
   $scope.doCalc = function() {

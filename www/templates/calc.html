@@ -1,40 +1,41 @@
 <ion-view view-title="Predict bankruptcy risk">
-  <ion-content>
-    <form name="calcForm" ng-submit="doCalc()">
-      <div class="list">
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num1" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Liquidity" required>
-        </label>
-        <item-md-label class="item item-input">
-          <input type="number" ng-model="$parent.num2" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Efficiency">
-        </item-md-label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num3" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Size">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num4" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Concentration Index">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num5" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Asset Quality">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num6" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Market Share">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num7" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="GDP">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num8" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Inflation">
-        </label>
-        <label class="item item-input">
-          <input type="number" ng-model="$parent.num9" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Error">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Calculate</button>
-          <Br><button class="button button-block button-assertive" ng-click="resetForm()">Reset Values</button>
-        </label>
-
-      </div>
-    </form>
-  </ion-content>
+    <ion-content>
+        <div class="list">
+            <form name="calcForm">
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num1" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Liquidity" required>
+                </label>
+                <item-md-label class="item item-input">
+                    <input type="number" ng-model="$parent.num2" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Efficiency">
+                </item-md-label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num3" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Size">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num4" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Concentration Index">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num5" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Asset Quality">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num6" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Market Share">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num7" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="GDP">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num8" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Inflation">
+                </label>
+                <label class="item item-input">
+                    <input type="number" ng-model="$parent.num9" ng-pattern="/^[0-9]+(\.[0-9]{1,5})?$/" step="0.00001" placeholder="Error">
+                </label>
+                <label style="padding-bottom: 0px;!important" class="item">
+                    <button class="button button-block button-positive" ng-click="doCalc()">Calculate</button>
+                </label>
+                <label style="padding-top: 0px;!important" class="item">
+                    <button class="button button-block button-assertive" ng-click="resetForm()">Reset Values</button>
+                </label> 
+            </form>
+        </div>
+    </ion-content>
 </ion-view>
