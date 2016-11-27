@@ -42,8 +42,6 @@ angular.module('starter.controllers', [])
     var inf = $scope.num8;
     var err = $scope.num9;
 
-    //console.log(a);
-
 
     if(/\D/.test(liq))
         {
