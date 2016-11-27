@@ -21,10 +21,17 @@ angular.module('starter.controllers', [])
   $scope.doCalc = function() {
     var a = $scope.num1;
     var b = $scope.num2;
+    var c = $scope.num3;
+    var d = $scope.num4;
+    var e = $scope.num5;
+    var f = $scope.num6;
+    var g = $scope.num7;
+    var h = $scope.num8;
+    var i = $scope.num9;
     console.log(a);
-    var c = a + b;
+    var sum = a + b + c + d + e + f + g + h + i;
 
-    Data.setTotal(c);
+    Data.setTotal(sum);
 
     $state.go('app.result');
   };
