@@ -19,24 +19,35 @@ angular.module('starter.controllers', [])
 
 .controller('CalcCtrl', function($scope, $state, Data) {
   $scope.doCalc = function() {
-    var a = $scope.num1;
-    var b = $scope.num2;
-    console.log(a);
-    var c = a + b;
+    var liq = $scope.num1;
+    var eff = $scope.num2;
+    var size = $scope.num3;
+    var coni = $scope.num4;
+    var assq = $scope.num5;
+    var mars = $scope.num6;
+    var gdp = $scope.num7;
+    var inf = $scope.num8;
+    var err = $scope.num9;
 
-    Data.setTotal(c);
+    //console.log(a);
+    var res = liq + eff +size + coni + assq + mars + gdp +inf + err;
+
+    Data.setTotal(res);
 
     $state.go('app.result');
   };
 })
 
 .controller('ResultCtrl', function($scope, $state, Data){
-  var c = Data.getTotal();
-  $scope.total = c;
+  var res = Data.getTotal();
+  $scope.total = res;
 
-  if (c < 50)
+  if (res < 50)
       $scope.status = "fail";
     else
       $scope.status = "pass";
+
+
+  $scope.perc = (res/100)*100;
 
 });
