@@ -21,6 +21,7 @@ angular.module('starter.controllers', [])
   $scope.doCalc = function() {
     var a = $scope.num1;
     var b = $scope.num2;
+    console.log(a);
     var c = a + b;
 
     Data.setTotal(c);
