@@ -8561,10 +8561,10 @@ select[multiple], select[size] {
  * Progress
  * --------------------------------------------------
  */
-progress {
+/*progress {
   display: block;
   margin: 15px auto;
-  width: 100%; }
+  width: 100%; }*/
 
 /**
  * Buttons
