@@ -43,8 +43,61 @@ angular.module('starter.controllers', [])
     var err = $scope.num9;
 
     //console.log(a);
-    var sum = liq + eff +size + coni + assq + mars + gdp +inf + err;
+
+
+    if(/\D/.test(liq))
+        {
+        alert("Liquidity has to be a number")
+        return;
+        }
+
+    else if(/\D/.test(eff))
+        {
+        alert("Efficiency has to be a number")
+        return;
+        }
+    else if(/\D/.test(size))
+        {
+        alert("Size has to be a number")
+        return;
+        }
+
+    else if(/\D/.test(coni))
+        {
+        alert("Concentration Index has to be a number")
+        return;
+        }
+
+    else if(/\D/.test(assq))
+        {
+        alert("Asset Quality has to be a number")
+        return;
+        }
+
+    else if(/\D/.test(mars))
+        {
+        alert("Market Share has to be a number")
+        return;
+        }
+      else if(/\D/.test(gdp))
+        {
+        alert("GDP to be a number")
+        return;
+    }
+    else if(/\D/.test(inf))
+        {
+        alert("inflation has to be a number")
+        return;
+        }
+    else if(/\D/.test(err))
+        {
+        alert("Error has to be a number")
+        return;
+        }
+
+   var sum = liq + eff +size + coni + assq + mars + gdp +inf + err;
     Data.setTotal(sum);
+
 
     $state.go('app.result');
   };
