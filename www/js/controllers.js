@@ -31,12 +31,13 @@ angular.module('starter.controllers', [])
     var err = $scope.num9;
 
     //console.log(a);
-    var res = liq + eff +size + coni + assq + mars + gdp +inf + err;
-
+    var sum = liq + eff +size + coni + assq + mars + gdp +inf + err;
     Data.setTotal(sum);
 
     $state.go('app.result');
   };
+
+
 })
 
 .controller('ResultCtrl', function($scope, $state, Data){
