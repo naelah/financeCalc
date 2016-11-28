@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.alinael.financeCalc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>app2</name>
+<widget id="com.alinael.financeCalc" version="0.1.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Bankruptcy Risk</name>
   <description>
         An app to predict and grade the financial status of a bank.
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
+  <author email="nurali2293@gmail.com" href="http://naelahnordin.com/">
       Naelah | Nurali
     </author>
   <content src="index.html"/>
